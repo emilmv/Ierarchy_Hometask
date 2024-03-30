@@ -4,8 +4,8 @@ namespace Ierarchy_Hometask.Interfaces
     internal interface IMarket
     {
         public List<Product> Products { get; }
-        void AddProduct();
-        void RemoveProductByNo();
-        void Sell();
+        public void AddProduct(Product product);
+        void RemoveProductByNo(int no);
+        void Sell(int no);
     }
 }
